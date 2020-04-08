@@ -15,25 +15,43 @@
 
 <body>
     <header>
-        <div class="row no-gutters bg-color-name-title">
-                <div class="col-md-8">
-                    <h1 class="name">Nicklas Jonsson</h1>
-                    <h2 class="title">Full Stack Developer</h2>
-                </div>
-                <div class="col-md-4 burger-menu">
-                    <h1 class="name">Burger-menu</h1>
-                </div>
+        <div class="container-fluid navigation-container">    
+            <nav class="navbar navbar-dark navbar-expand-sm">   
+                <img src="/assets/images/logo.png" href="/" class="img-fluid" alt="Responsive image">
+
+                    
+		    	<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+                    
+		    	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		    		<ul class="navbar-nav mr-auto"> 
+		    			<li class="nav-item mr-2"><a class="nav-link" href="/timeline">Timeline</a></li>
+                        <li class="nav-item mr-2"><a class="nav-link" href="/about">About Me</a></li>
+		    			<li class="nav-item mr-2"><a class="nav-link" href="/contact">Contact</a></li>
+		    		</ul>
+		    	</div>
+		    </nav>
         </div>
     </header>
-
     <section>
-        <!--Picture-->
+        <div class="container-fluid callout-container">
+		    <div class="row">
+				<img src="/assets/images/profil.png" href="/" class="img-fluid profile" alt="Responsive image">
+			    <div class="col-12">
+			        <section class="jumbotron text-center">
+				        <h1 class="question-header">Who am I?</h1>
+                        <p class="lead">Find out more by pressing the button.</p>
+				        <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">About Me</button>
+			        </section>
+			    </div>
+		    </div>
+        </div>
     </section>
 
     <section>
         <!--About me-->
     </section>
-    
+        
     <footer>
         <!--Contact info & Social Media-->
     </footer>
