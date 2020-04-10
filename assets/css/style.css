@@ -84,6 +84,14 @@
     position: relative;
 }
 
+.timeline-container {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 /* PROFILE IMAGE */
 .profile {
     position: absolute;
@@ -175,4 +183,90 @@
 
 .icon-looks:hover {
     color: #8b2c17;
+}
+
+/* SPECIAL PADDINGS, ETC */
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* TIMELINE */
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa; 
+}
+
+.history-items {
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+/* BUTTONS */
+.btn-link {
+    color: #fafafa;
+    padding-left: 0px;
+}
+
+.btn-link:hover {
+    color: #b1b1b1;
+}
+
+/* MODAL */
+.modal-body {
+    padding-bottom: 50px;
+}
+
+.modal-title,
+.modal-body {
+    color: #000000;
 }

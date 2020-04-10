@@ -16,16 +16,16 @@
     <header>
         <div class="container-fluid navigation-container">    
             <nav class="navbar fixed-top navbar-dark navbar-expand-md">   
-                <a href="index.html" target="_self">
+                <a href="index.html" class="navbar-brand" target="_self">
 				    <img src="assets/images/logo.png" href="index.html" class="img-fluid logo-header" alt="Webpage Logo - responsive image" style="width: 400px;">
                 </a>
-                
+                    
 		    	<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
                     
-		    	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		    	<div class="navbar-collapse collapse" id="navbarNavDropdown">
 		    		<ul class="navbar-nav mr-auto"> 
-		    			<li class="active nav-item mr-2"><a class="nav-link" href="timeline.html">Timeline</a></li>
+		    			<li class="nav-item mr-2"><a class="nav-link" href="timeline.html">Timeline</a></li>
                         <li class="nav-item mr-2"><a class="nav-link" href="about.html">About Me</a></li>
 		    			<li class="nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
 		    		</ul>
@@ -37,10 +37,81 @@
     <section>
         <div class="container-fluid timeline-container">
 		    <div class="row">
-                <div class="col-12">
+                <div class="col-12 section-column">
+                    <h3 class="history-heading">My Timeline:</h3>
+                    <div class="history-items">
+                        <div class="timeline-item" data-dates="2013.04.15 - Present">
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#essveModal">
+                                <h4>ESSVE Sverige AB</h4>
+                            </button>
+
+                            <div class="modal fade" id="essveModal" tabindex="-1" role="dialog" aria-labelledby="essveModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="essveModalLabel">ESSVE Sverige AB</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>En säljande kundserviceroll som förutom produktvägledning,
+                                            reklamationshantering, etc, också inneburit en hel del praktiska
+                                            erfarenheter. Exempelvis jobbar jag mycket på mässor, håller
+                                            utbildningar och vikarierar då och då på olika säljdistrikt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Customer Service Representative</p>
+                        </div>
+                        <div class="timeline-item" data-dates="2020.01.07 - Present">
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#codeInsModal">
+                                <h4>Code Institute</h4>
+                            </button>
+
+                            <div class="modal fade" id="codeInsModal" tabindex="-1" role="dialog" aria-labelledby="codeInsModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="codeInsModalLabel">Code Institute</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>A full stack software development bootcamp, situated in Irland</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Full Stack Software Development Bootcamp</p>
+                        </div>
+                        <div class="timeline-item" data-dates="2017.12.05 - 2019-10-05">
+                            <h4>Nordr - Scandinavian Interior Design</h4>
+                            <p>Owner</p>
+                        </div>
+                        <div class="timeline-item" data-dates="2012.05.06 - 2012.10.09">
+                            <h4>24MX</h4>
+                            <p>Warehouse worker</p>
+                        </div>
+                        <div class="timeline-item" data-dates="2010.11.30 - 2012.01.13">
+                            <h4>ZooVillage</h4>
+                            <p>Warehouse worker</p>
+                        </div>
+                        <div class="timeline-item" data-dates="2010.05.03 - 2010.08.16">
+                            <h4>Riksbyggen AB</h4>
+                            <p>Janitor</p>
+                        </div>
+                        <div class="timeline-item" data-dates="2010.02.21 - 2010.03.20">
+                            <h4>Skellefteå Montage</h4>
+                            <p>Snow shoveler</p>
+                        </div>
+                    </div>
                 </div>
-		    </div>
-        </div>
+            </div>
+	    </div>
     </section>
 
     <footer class="container-fluid">
