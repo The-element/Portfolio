@@ -16,8 +16,8 @@
 <body>
     <header>
         <div class="container-fluid navigation-container">    
-            <nav class="navbar navbar-dark navbar-expand-sm">   
-                <img src="assets/images/logo.png" href="/" class="img-fluid logo-header" alt="Webpage Logo - responsive image" style="width: 400px;">
+            <nav class="navbar fixed-top navbar-dark navbar-expand-md">   
+                <img src="assets/images/logo.png" href="index.html" class="img-fluid logo-header" alt="Webpage Logo - responsive image" style="width: 400px;">
 
                     
 		    	<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,9 +25,9 @@
                     
 		    	<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		    		<ul class="navbar-nav mr-auto"> 
-		    			<li class="nav-item mr-2"><a class="nav-link" href="/timeline">Timeline</a></li>
-                        <li class="nav-item mr-2"><a class="nav-link" href="/about">About Me</a></li>
-		    			<li class="nav-item mr-2"><a class="nav-link" href="/contact">Contact</a></li>
+		    			<li class="nav-item mr-2"><a class="nav-link" href="timeline.html">Timeline</a></li>
+                        <li class="nav-item mr-2"><a class="nav-link" href="about.html">About Me</a></li>
+		    			<li class="nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
 		    		</ul>
 		    	</div>
 		    </nav>
@@ -49,18 +49,29 @@
     </section>
 
     <section>
-        <!--About me-->
+        <div class="container-fluid aboutme-container">
+		    <div class="row">
+                <div class="col-12">
+                    <h1 class="aboutme-header">About Me</h1>
+                    <p class="lead">I sometimes call myself a multipotentialite because of my many skills and hobbies.<br>
+                    I'm focused on becoming a full stack developer but I also work extra as a technichan/handyman.<br>
+                    I dream of changing the world, or at least contribute to making peoples lives better.<br>
+                    I would love to do so while beign creative, which is where programming and development comes in handy.<br>
+                    It gives me the tools to do so.</p>
+                </div>
+		    </div>
+        </div>
     </section>
         
     <footer class="container-fluid">
         <div id="the-footer" class="row">
 			<div class="col-sm-4">
-				<h5 class="uppercase general-sub">Contact Me!</h5>
+				<h5 class="general-sub">Contact Me!</h5>
 				<p class="alignment-left">Nicklas Jonsson<br>Järnåldersringen 783<br>13665 Söderby</p>
 				<p class="alignment-left">+46 (0)70-305 55 61<br>Nicke.jonsson@live.com</p>
             </div>
             <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Download</h5>
+                <h5 class="general-sub">Download</h5>
                 <p class="inline-block">
                     Need a printable version of my CV? <br>Download it here.
                     <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf">
@@ -70,11 +81,11 @@
                 </p>
 			</div>
 			<div class="col-sm-4">
-                <h5 class="uppercase general-sub">About Me</h5>
+                <h5 class="general-sub">About Me</h5>
                 <p class="inline-block">
                     A Multipotentialite and Full Stack Developer. Skilled in everything from Python & HTML to ESP8266 and 3D modeling.
 				</p>
-				<ul class="list-inline social-links">
+				<ul class="list-inline">
                     <li class="list-inline-item">
                         <a target="_blank" href="https://www.facebook.com/nicklas.jonsson.3576">
                             <i class="icon-looks fa fa-facebook" aria-hidden="true"></i>
