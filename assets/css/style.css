@@ -92,6 +92,13 @@
     background-size: cover;
 }
 
+/* adjusting placement of edu-container, to small screen sizes */
+@media(max-width: 532px) {
+    .edu-container {
+    padding-top: 1000px;
+    }
+}
+
 /* PROFILE IMAGE */
 .profile {
     position: absolute;
@@ -249,6 +256,10 @@
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
+}
+
+.papercut {
+    padding-top: 15rem;
 }
 
 /* BUTTONS */
