@@ -1,4 +1,4 @@
-/* Navbar */
+/* NAVIGATIONBAR */
 .navigation-container {
     position: absolute;
     top: 0;
@@ -30,6 +30,7 @@
     flex-direction: row-reverse;
 }
 
+/* adjusting to screen sizes */
 @media(min-width: 1200px) {
     .navbar .mr-auto {
         padding-left: 70%;
@@ -44,7 +45,7 @@
 }
 
 
-/* Containers */
+/* CONTAINERS */
 .callout-container {
     height: 100vh;
 
@@ -61,6 +62,7 @@
     position: relative;
 }
 
+/* PROFILE IMAGE */
 .profile {
     position: absolute;
     bottom: 0px;
@@ -69,7 +71,25 @@
     width: 600px;
 }
 
-/* Jumbotron */
+/* adjusting size of profile picture, to screen sizes */
+@media(max-width: 600px) {
+    .profile {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media(max-width: 320px) {
+    .profile {
+        position: absolute;
+        bottom: 0px;
+        right: 5px;
+        width: 90%;
+        height: 80%;
+    }
+}
+
+/* JUMBOTRON */
 .jumbotron {
     background-color: transparent;
 }
@@ -82,11 +102,11 @@
 }
 
 .jumbotron .lead {
-    color: #a7a7a7;
+    color: #fafafa;
     margin: 25px 0;
 }
 
-/* Buttons */
+/* BUTTONS */
 .btn--cta {
     font-weight: bold;
     border-radius: 23px;
@@ -106,4 +126,30 @@
     background-color: #df4929;
     border-color: #df4929;
     color: white;
+}
+
+/* FOOTER */
+#the-footer {
+    font-family: "Exo", sans-serif;
+    background-color: black;
+    color: #a1a1a1;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* adjusting placing of text, to screen sizes */
+@media(min-width: 578px) {
+    #the-footer .alignment-left {
+        text-align: left;
+        padding: 0px 0px 0px 100px;
+    }
+}
+
+/* ICONS */
+.icon-looks {
+    color: #df4929;
+}
+
+.icon-looks:hover {
+    color: #8b2c17;
 }
