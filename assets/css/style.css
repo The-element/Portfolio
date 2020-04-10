@@ -123,8 +123,8 @@
 .btn--red:active,
 .btn--red:focus,
 .btn--red:active:focus {
-    background-color: #df4929;
-    border-color: #df4929;
+    background-color: #8b2c17;
+    border-color: #8b2c17;
     color: white;
 }
 
@@ -148,6 +148,7 @@
 /* ICONS */
 .icon-looks {
     color: #df4929;
+    font-size: 25px;
 }
 
 .icon-looks:hover {
