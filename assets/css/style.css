@@ -44,10 +44,11 @@
 }
 
 @media(max-width: 500px) {
-    .navbar .img-fluid {
-        max-width: 50%!important;
+    .navbar-brand .img-fluid {
+        width: 200px!important;
     }
 }
+
 
 /* CONTAINERS */
 .callout-container {
