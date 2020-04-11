@@ -95,9 +95,7 @@
     text-align: center;
 }
 
-    .maps-container {
-    height: 100vh;
-
+.maps-container {
     background: url('../images/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -225,6 +223,16 @@
 }
 
 /* TIMELINE */
+
+.timeline-header {
+    color: #fafafa;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    bottom: 0px;
+    font-weight: bold;
+}
+
 .history-heading {
     color: #fafafa;
     margin-bottom: 50px;
@@ -275,7 +283,7 @@
 
 .section-column {
     display: table-cell;
-    padding: 0 30px 30px;
+    padding: 0px 30px 0px 30px;
     float: none;
 }
 
@@ -372,6 +380,19 @@ span.progress-type {
 
 .form-control {
     margin: 5px;
+}
+
+.contact-header {
+    color: #fafafa;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    bottom: 0px;
+    font-weight: bold;
+}
+
+iframe {
+    margin-bottom: 50px;
 }
 
 @media(max-width: 768px) {
