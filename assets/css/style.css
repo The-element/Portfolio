@@ -92,6 +92,37 @@
     background-size: cover;
 }
 
+.about-container {
+
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Exo", sans-serif;
+
+    position: relative;
+}
+
+.skills-container {
+    background-color: #fafafa;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Exo", sans-serif;
+    text-align: center;
+}
+
 /* adjusting placement of edu-container, to small screen sizes */
 @media(max-width: 532px) {
     .edu-container {
@@ -129,6 +160,7 @@
 /* JUMBOTRON */
 .jumbotron {
     background-color: transparent;
+    margin: 0px 150px;
 }
 
 .jumbotron h1 {
@@ -286,4 +318,46 @@
 .modal-title,
 .modal-body {
     color: #000000;
+}
+
+/* ABOUT */
+
+.aboutme-header {
+    color: #fafafa;
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 30px 30px;
+    float: none;
+}
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+span.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+.skills-header {
+    margin-top: 50px;
+}
+
+.progress-bar {
+    background-color: #df4929;
 }
