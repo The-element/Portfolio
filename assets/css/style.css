@@ -1,13 +1,4 @@
 /* NAVIGATIONBAR */
-.navigation-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .navbar {
     margin-bottom: 0;
     width: 100%;
@@ -109,6 +100,8 @@
     font-family: "Exo", sans-serif;
 
     position: relative;
+
+    padding-top: 50px;
 }
 
 .skills-container {
@@ -311,7 +304,7 @@
 
 @media(max-width: 530px) {
     .timeline-item {
-        padding: 7em 0em 0em 2em!important;
+        padding: 5em 0em 0em 2em!important;
     }
 }
 
@@ -402,4 +395,18 @@ span.progress-type {
 
 .form-control {
     margin: 5px;
+}
+
+@media(max-width: 768px) {
+    .embed-responsive-item {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media(max-width: 425px) {
+    .embed-responsive-item {
+        height: 250px;
+        width: 250px;
+    }
 }
