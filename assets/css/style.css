@@ -258,6 +258,12 @@
     float: none;
 }
 
+@media(max-width: 530px) {
+    .timeline-item {
+        padding: 7em 0em 0em 2em!important;
+    }
+}
+
 .papercut {
     padding-top: 15rem;
 }
