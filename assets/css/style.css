@@ -123,6 +123,24 @@
     text-align: center;
 }
 
+    .maps-container {
+    height: 100vh;
+
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Exo", sans-serif;
+
+    position: relative;
+}
+
 /* adjusting placement of edu-container, to small screen sizes */
 @media(max-width: 532px) {
     .edu-container {
@@ -360,4 +378,27 @@ span.progress-type {
 
 .progress-bar {
     background-color: #df4929;
+}
+
+/* CONTACT */
+.embed-responsive-item {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    padding-top: 50px;
+    border-color: rgba(25, 25, 25, 0.027);
+}
+
+.contact-heading {
+    margin-top: 50px;
+}
+
+.center-form {
+    padding: 20px 0px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.form-control {
+    margin: 5px;
 }
