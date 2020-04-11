@@ -16,31 +16,8 @@
     width: 100px;
 }
 
-#navbarNavDropdown {
-    flex-direction: row-reverse;
-}
-
 .fixed-top a {
     width: 200px;
-}
-
-/* adjusting to screen sizes */
-@media(min-width: 500px) {
-    .mr-auto {
-        margin-left: 20%;
-    }
-}
-
-@media(min-width: 1200px) {
-    .mr-auto {
-        padding-left: 70%;
-    }
-}
-
-@media(max-width: 500px) {
-    .fixed-top a {
-        width: 200px!important;
-    }
 }
 
 /* CONTAINERS */
