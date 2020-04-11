@@ -25,30 +25,32 @@
     width: 100px;
 }
 
-.navbar .navbar-container {
-    justify-content: flex-end!important;
+#navbarNavDropdown {
     flex-direction: row-reverse;
+}
+
+.fixed-top a {
+    width: 200px;
 }
 
 /* adjusting to screen sizes */
 @media(min-width: 500px) {
-    .navbar .mr-auto {
-        padding-left: 20%;
+    .mr-auto {
+        margin-left: 20%;
     }
 }
 
 @media(min-width: 1200px) {
-    .navbar .mr-auto {
+    .mr-auto {
         padding-left: 70%;
     }
 }
 
 @media(max-width: 500px) {
-    .navbar-brand .img-fluid {
+    .fixed-top a {
         width: 200px!important;
     }
 }
-
 
 /* CONTAINERS */
 .callout-container {
@@ -185,7 +187,6 @@
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
-    color: white;
 }
 
 .jumbotron .lead {
