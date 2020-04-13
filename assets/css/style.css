@@ -20,6 +20,10 @@
     width: 200px;
 }
 
+.ml-auto {
+    margin-left: 0!important;
+}
+
 /* CONTAINERS */
 .callout-container {
     height: 100vh;
@@ -111,13 +115,6 @@
     position: relative;
 }
 
-/* adjusting placement of edu-container, to small screen sizes */
-@media(max-width: 532px) {
-    .edu-container {
-    padding-top: 1000px;
-    }
-}
-
 /* PROFILE IMAGE */
 .profile {
     position: absolute;
@@ -125,24 +122,6 @@
     right: 0px;
     height: 640px;
     width: 600px;
-}
-
-/* adjusting size of profile picture, to screen sizes */
-@media(max-width: 600px) {
-    .profile {
-        width: 50%;
-        height: 50%;
-    }
-}
-
-@media(max-width: 320px) {
-    .profile {
-        position: absolute;
-        bottom: 0px;
-        right: 5px;
-        width: 90%;
-        height: 80%;
-    }
 }
 
 /* JUMBOTRON */
@@ -184,6 +163,15 @@
     color: white;
 }
 
+.btn-link {
+    color: #fafafa;
+    padding-left: 0px;
+}
+
+.btn-link:hover {
+    color: #b1b1b1;
+}
+
 /* FOOTER */
 #the-footer {
     font-family: "Exo", sans-serif;
@@ -191,14 +179,6 @@
     color: #a1a1a1;
     padding-top: 30px;
     text-align: center;
-}
-
-/* adjusting placing of text, to screen sizes */
-@media(min-width: 578px) {
-    #the-footer .alignment-left {
-        text-align: left;
-        padding: 0px 0px 0px 100px;
-    }
 }
 
 /* ICONS */
@@ -287,24 +267,8 @@
     float: none;
 }
 
-@media(max-width: 530px) {
-    .timeline-item {
-        padding: 5em 0em 0em 2em!important;
-    }
-}
-
 .papercut {
     padding-top: 15rem;
-}
-
-/* BUTTONS */
-.btn-link {
-    color: #fafafa;
-    padding-left: 0px;
-}
-
-.btn-link:hover {
-    color: #b1b1b1;
 }
 
 /* MODAL */
@@ -395,6 +359,41 @@ iframe {
     margin-bottom: 50px;
 }
 
+/* MEDIA */
+
+/* adjusting placement of edu-container, to small screen sizes */
+@media(max-width: 532px) {
+    .edu-container {
+    padding-top: 1000px;
+    }
+}
+
+/* adjusting size of profile picture, to screen sizes */
+@media(max-width: 600px) {
+    .profile {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media(max-width: 320px) {
+    .profile {
+        position: absolute;
+        bottom: 0px;
+        right: 5px;
+        width: 90%;
+        height: 80%;
+    }
+}
+
+/* Timeline: */
+@media(max-width: 530px) {
+    .timeline-item {
+        padding: 5em 0em 0em 2em!important;
+    }
+}
+
+/* Contact: */
 @media(max-width: 768px) {
     .embed-responsive-item {
         height: 300px;
