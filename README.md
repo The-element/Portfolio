@@ -18,10 +18,10 @@ Then I did some research close to myself; I talked to employeers that I'm in rea
 Then I made a basic framework of the two first pages:
 
 The Index:
-<img src="readme-assets/index.png" style="width: 100px;">
+<img src="readme-images/index.png" style="width: 100px;">
 
 The Timeline:
-<img src="readme-assets/timeline.png" style="width: 100px;">
+<img src="readme-images/timeline.png" style="width: 100px;">
 
 I then carried on looking in on how to approach it and after some Slack-discussions and some insights from my Mentor I decided to include [Bootstrap](https://getbootstrap.com/),
 and to re-use some structural code from the two former projects; [Resume](https://github.com/The-element/UCD-Resume) and the [Bootstrap Intro](https://github.com/The-element/bootstrap-intro) and to work with the over-all layout first, before doing any of the finishing touches.

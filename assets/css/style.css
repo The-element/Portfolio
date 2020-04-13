@@ -17,7 +17,9 @@
 }
 
 .fixed-top a {
-    width: 200px;
+    width: 50%;
+    height: 50%;
+    margin-right: 0px;
 }
 
 .ml-auto {
@@ -27,6 +29,7 @@
 /* CONTAINERS */
 .callout-container {
     height: 100vh;
+    width: 100%;
 
     background: url('../images/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -105,14 +108,14 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+/*
     display: flex;
     align-items: center;
     justify-content: center;
 
     font-family: "Exo", sans-serif;
 
-    position: relative;
+    position: relative; */
 }
 
 /* PROFILE IMAGE */
@@ -127,7 +130,7 @@
 /* JUMBOTRON */
 .jumbotron {
     background-color: transparent;
-    margin: 0px 150px;
+    margin: 0px 0px;
 }
 
 .jumbotron h1 {
@@ -203,7 +206,6 @@
 }
 
 /* TIMELINE */
-
 .timeline-header {
     color: #fafafa;
     position: relative;
@@ -258,17 +260,21 @@
 
 .history-items {
     margin-bottom: 30px;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
 .section-column {
     display: table-cell;
-    padding: 0px 30px 0px 30px;
     float: none;
 }
 
 .papercut {
     padding-top: 15rem;
+}
+
+.small {
+    color: #b8b8b8;
+    text-align: center;
 }
 
 /* MODAL */
@@ -282,7 +288,6 @@
 }
 
 /* ABOUT */
-
 .aboutme-header {
     color: #000000;
 }
@@ -291,11 +296,6 @@
     margin: 40px 20px;
 }
 
-.section-column {
-    display: table-cell;
-    padding: 30px 30px;
-    float: none;
-}
 .progress {
     position: relative;
     height: 25px;
@@ -359,14 +359,39 @@ iframe {
     margin-bottom: 50px;
 }
 
-/* MEDIA */
-
-/* adjusting placement of edu-container, to small screen sizes */
-@media(max-width: 532px) {
-    .edu-container {
-    padding-top: 1000px;
+@media(min-width: 980px) {
+    .right-align {
+        text-align: right;
+        padding-right: 100px;
+    }
+    .left-align {
+        text-align: left;
     }
 }
+
+
+@media(max-width: 676px) {
+    .right-align {
+        text-align: center;
+        padding-right: 0px;
+    }
+    .left-align {
+        text-align: center;
+    }
+    .iframe-column {
+        text-align: center;
+    }
+}
+
+.margin-top {
+    margin-top: 70px;
+}
+
+.color-white {
+    color: #fafafa;
+}
+
+/* MEDIA */
 
 /* adjusting size of profile picture, to screen sizes */
 @media(max-width: 600px) {
