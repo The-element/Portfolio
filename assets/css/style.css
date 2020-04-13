@@ -26,6 +26,10 @@
     margin-left: 0!important;
 }
 
+.img-fluid {
+    height: 40px;
+}
+
 /* CONTAINERS */
 .callout-container {
     height: 100vh;
