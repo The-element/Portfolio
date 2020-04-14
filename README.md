@@ -72,7 +72,7 @@ All testing is done sequential, and structured. Like when testing forms;
 3. I then check the error logs.
 4. I do this again but with failing details, like a non-working mailaddress. To see what happens and if anything can be done differntly.
 
-Lastly I always run developer tools one final time, to see that there aren't any obvious mistakes left.
+Lastly I always run a validator tool to validate the CSS and the HTML, to see that there aren't any obvious mistakes left.
 
 ## Deployment
 
