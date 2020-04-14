@@ -1,4 +1,4 @@
-/* NAVIGATIONBAR */
+/* Navigationbar and its styling */
 .navbar {
     margin-bottom: 0;
     width: 100%;
@@ -30,99 +30,44 @@
     height: 40px;
 }
 
-/* CONTAINERS */
+/* Backgrounds */
+.background-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.background-container {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.white-background-container {
+    background-color: #fafafa;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* Containers and their styling */
+.my-font-family {
+    font-family: "Exo", sans-serif;
+}
+
 .callout-container {
     height: 100vh;
     width: 100%;
-
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "Exo", sans-serif;
-
-    position: relative;
-}
-
-.aboutme-container {
-    background-color: #fafafa;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "Exo", sans-serif;
-    text-align: center;
-    position: relative;
-}
-
-.timeline-container {
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .about-container {
-
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "Exo", sans-serif;
-
-    position: relative;
-
     padding-top: 50px;
 }
 
-.skills-container {
-    background-color: #fafafa;
-    
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "Exo", sans-serif;
-    text-align: center;
-}
-
-.maps-container {
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-/*
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "Exo", sans-serif;
-
-    position: relative; */
-}
-
-/* PROFILE IMAGE */
+/* the first page profile image and its styling */
 .profile {
     position: absolute;
     bottom: 0px;
@@ -131,7 +76,7 @@
     width: 600px;
 }
 
-/* JUMBOTRON */
+/* the jumbotron and its styling */
 .jumbotron {
     background-color: transparent;
     margin: 0px 0px;
@@ -148,23 +93,20 @@
     margin: 25px 0;
 }
 
-/* BUTTONS */
-.btn--cta {
+/* Buttons */
+.btn-red {
     font-weight: bold;
     border-radius: 23px;
     width: 160px;
-}
-
-.btn--red {
     color: white;
     background-color: #f05f40;
     border-color: #f05f40;
 }
 
-.btn--red:hover,
-.btn--red:active,
-.btn--red:focus,
-.btn--red:active:focus {
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus,
+.btn-red:active:focus {
     background-color: #8b2c17;
     border-color: #8b2c17;
     color: white;
@@ -179,7 +121,7 @@
     color: #b1b1b1;
 }
 
-/* FOOTER */
+/* The footer and its styling */
 #the-footer {
     font-family: "Exo", sans-serif;
     background-color: black;
@@ -188,7 +130,7 @@
     text-align: center;
 }
 
-/* ICONS */
+/* icons and their styling */
 .icon-looks {
     color: #df4929;
     font-size: 25px;
@@ -198,18 +140,14 @@
     color: #8b2c17;
 }
 
-/* SPECIAL PADDINGS, ETC */
+/* special paddings, etc */
 .general-sub {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fafafa;
 }
 
-.inline-block {
-    display: inline-block;
-}
-
-/* TIMELINE */
+/* The timeline and its items styling */
 .timeline-header {
     color: #fafafa;
     position: relative;
@@ -223,6 +161,7 @@
     color: #fafafa;
     margin-bottom: 50px;
     margin-top: 150px;
+    margin-left: 20px;
 }
 
 .timeline-item {
@@ -264,12 +203,13 @@
 
 .history-items {
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .section-column {
     display: table-cell;
     float: none;
+    padding-bottom: 50px;
 }
 
 .papercut {
@@ -281,7 +221,7 @@
     text-align: center;
 }
 
-/* MODAL */
+/* the modal used to display additional info on the timeline page */
 .modal-body {
     padding-bottom: 50px;
 }
@@ -291,7 +231,7 @@
     color: #000000;
 }
 
-/* ABOUT */
+/* the about me page and its styling */
 .aboutme-header {
     color: #000000;
 }
@@ -312,7 +252,7 @@ span.progress-type {
     font-weight: 400;
     padding: 3px 30px 2px 10px;
     color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .progress-section {
@@ -327,7 +267,7 @@ span.progress-type {
     background-color: #df4929;
 }
 
-/* CONTACT */
+/* the contact page and its styling */
 .embed-responsive-item {
     height: 500px;
     width: 500px;
@@ -343,7 +283,7 @@ span.progress-type {
 .center-form {
     padding: 20px 0px;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 50%;
 }
 
 .form-control {
@@ -363,28 +303,8 @@ iframe {
     margin-bottom: 50px;
 }
 
-@media(min-width: 980px) {
-    .right-align {
-        text-align: right;
-        padding-right: 100px;
-    }
-    .left-align {
-        text-align: left;
-    }
-}
-
-
-@media(max-width: 676px) {
-    .right-align {
-        text-align: center;
-        padding-right: 0px;
-    }
-    .left-align {
-        text-align: center;
-    }
-    .iframe-column {
-        text-align: center;
-    }
+.iframe-column {
+    text-align: center;
 }
 
 .margin-top {
@@ -396,6 +316,22 @@ iframe {
 }
 
 /* MEDIA */
+/* changes the navbar color to solid black on small and medium devices */
+@media(max-width: 768px) {
+    .navbar {
+        background-color: #000000;
+    }
+}
+
+/* aligns navitems to the left */
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        flex-direction: row-reverse;
+    }
+    .mr-auto, .mx-auto {
+        margin-right: 10px!important;
+    }
+}
 
 /* adjusting size of profile picture, to screen sizes */
 @media(max-width: 600px) {
@@ -415,14 +351,37 @@ iframe {
     }
 }
 
-/* Timeline: */
-@media(max-width: 530px) {
-    .timeline-item {
-        padding: 5em 0em 0em 2em!important;
+/* adjusts the margin of history items in Timeline, to better fit smaller screen devices */
+@media(max-width: 768px) {
+    .history-items {
+    margin-bottom: 30px;
+    margin-left: 0px;
     }
 }
 
-/* Contact: */
+/* adjusting the placement and alignment of text in the columns next to the map on the contact page */
+@media(min-width: 980px) {
+    .right-align {
+        text-align: right;
+    }
+    .left-align {
+        text-align: left;
+    }
+}
+
+@media(max-width: 768px) {
+    .right-align {
+        text-align: center;
+    }
+    .left-align {
+        text-align: center;
+    }
+    .center-form {
+        max-width: 70%;
+    }
+}
+
+/* adjusts the size of the embedded map on the contact page */
 @media(max-width: 768px) {
     .embed-responsive-item {
         height: 300px;
