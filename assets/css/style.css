@@ -125,6 +125,8 @@
     display: block;
     margin-left: auto;
     margin-right: 0;
+    height: 80vh!important;
+    bottom: -20vh;
     width: 50%;
     position: relative;
     animation-name: profil;
@@ -134,12 +136,29 @@
 }
 
 .carousel-item {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
     height: 100vh;
 }
 .carousel-item img{
     height: 100vh;
     width: auto;
 }
+
+.carousel-control-prev-icon
+.carousel-control-next-icon{
+    padding: 20px;
+    border: white solid 2px;
+    border-radius: 25px;
+    width: 10px;
+    height: 10px;
+    background: no-repeat 50%/60% 60%;
+}
+
 .car-one{
     background-color: black;
 }
@@ -409,18 +428,8 @@ iframe {
 /* adjusting size of profile picture, to screen sizes */
 @media(max-width: 600px) {
     .profile {
-        width: 50%;
-        height: 50%;
-    }
-}
-
-@media(max-width: 320px) {
-    .profile {
-        position: absolute;
-        bottom: 0px;
-        right: 5px;
-        width: 90%;
-        height: 80%;
+        bottom: -50%;
+        height: 50%!important;
     }
 }
 
