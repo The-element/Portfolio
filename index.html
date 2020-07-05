@@ -21,7 +21,7 @@
 		<div class="container-fluid">
 			<nav id="header" class="navbar fixed-top navbar-dark navbar-expand-md">
 				<a href="index.html" class="navbar-brand" target="_self">
-					    <img src="assets/images/logo.png" class="img-fluid logo-header" alt="Webpage Logo - responsive image">
+					    <img src="assets/images/logo.png" class="img-fluid logo-header" id="logo-header" alt="Webpage Logo - responsive image">
                 </a>
 
 				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,26 +47,50 @@
     		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   		    </ol>
   		    <div class="carousel-inner"> <!--the carousel wrap-->
-    		    <div class="carousel-item w-100 d-block car-one active"> <!--carousel item-->
+    		    <div class="carousel-item w-100 d-block active"> <!--carousel item-->
                     <img src="assets/images/profil.png" href="index.html" class="img-fluid profile" alt="Responsive profile-picture">
-    		    </div> <!--!carousel item-->
+			        <div class="jumbo-cont"></div>
+                    <div class="carousel-caption"> <!--the transparent jumbotron-->
+				        <div class="text-center">
+					        <section class="jumbotron text-center">
+						        <h1 class="question-header">Who am I?</h1>
+						        <p class="lead">Find out more by pressing the button.</p>
+						        <a href="about.html">
+							        <button class="btn btn-lg btn-red" data-toggle="modal" data-target="#signUpModal">About Me</button>
+						        </a>
+					        </section>
+				        </div>
+			        </div> <!--!the transparent jumbotron-->
+                </div> <!--!carousel item-->
     		    <div class="carousel-item"> <!--carousel item-->
-                    <img src="assets/images/background.jpg" class="img-fluid d-block w-100" alt="Second slide">
-    		    </div> <!--!carousel item-->
+                    <img src="assets/images/index.jpg" class="img-fluid d-block w-100" alt="Second slide">
+                    <div class="jumbo-cont"></div>
+    		        <div class="carousel-caption"> <!--the transparent jumbotron-->
+				        <div class="text-center">
+					        <section class="jumbotron text-center">
+						        <h1 class="question-header">My Projects</h1>
+						        <p class="lead">See more of what I've done by pressing the button.</p>
+						        <a href="about.html">
+							        <button class="btn btn-lg btn-red" data-toggle="modal" data-target="#signUpModal">About Me</button>
+						        </a>
+					        </section>
+				        </div>
+			        </div> <!--!the transparent jumbotron-->
+                </div> <!--!carousel item-->
     		    <div class="carousel-item"> <!--carousel item-->
-                    <img src="assets/images/background.jpg" class="img-fluid d-block w-100" alt="Third slide">
-			    </div> <!--!carousel item-->
-			    <div class="carousel-caption"> <!--the transparent jumbotron-->
-				    <div class="jumbotron search-jumbo text-center">
-					    <section class="jumbotron text-center">
-						    <h1 class="question-header">Who am I?</h1>
-						    <p class="lead">Find out more by pressing the button.</p>
-						    <a href="about.html">
-							    <button class="btn btn-lg btn-red" data-toggle="modal" data-target="#signUpModal">About Me</button>
-						    </a>
-					    </section>
-				    </div>
-			    </div> <!--!the transparent jumbotron-->
+                    <img src="assets/images/hass.jpg" class="img-fluid d-block w-100" alt="Third slide">
+                    <div class="carousel-caption"> <!--the transparent jumbotron-->
+				        <div class="text-center">
+					        <section class="jumbotron text-center">
+						        <h1 class="question-header">Creative work</h1>
+						        <p class="lead">Want to know more about my work and hobbies?</p>
+						        <a href="about.html">
+							        <button class="btn btn-lg btn-red" data-toggle="modal" data-target="#signUpModal">About Me</button>
+						        </a>
+					        </section>
+				        </div>
+			        </div> <!--!the transparent jumbotron-->
+                </div> <!--!carousel item-->
   		    </div> <!--!the carousel wrap-->
 
   		    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <!--the carousel previous button-->
