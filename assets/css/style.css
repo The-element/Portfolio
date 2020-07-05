@@ -32,6 +32,10 @@
     animation-fill-mode: both;
 }
 
+#header{
+    transition: 0.2s;
+}
+
 @keyframes FadeIn {
     0% {
             opacity: 0;
