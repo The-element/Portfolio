@@ -110,6 +110,13 @@
     text-align: center;
 }
 
+.grey-background-container {
+    background-color: #db9292;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
 /* Containers and their styling */
 .my-font-family {
     font-family: "Exo", sans-serif;
@@ -343,6 +350,22 @@
 .modal-title,
 .modal-body {
     color: #000000;
+}
+
+/*Projects-site*/
+.projects-header,
+.projects-lead{
+    color: #fafafa;
+}
+
+.projects-cont{
+    min-height: 100px;
+}
+
+.projects-lead{
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /* the about me page and its styling */
