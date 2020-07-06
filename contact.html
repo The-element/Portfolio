@@ -11,6 +11,7 @@
 		type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
 		type="text/css">
+	<link rel="stylesheet" href="assets/css/contact.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<script type="text/javascript" src="assets/js/scripts.js"></script>
 	<title>Portfolio</title>
@@ -40,49 +41,60 @@
 		</div>
 	</header>
 
-	<section class="container-fluid background-container my-font-family">
-		<div class="row">
-			<div class="col-12">
-				<h1 class="contact-header">Contact me</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md">
-				<p class="right-align margin-top color-white">Järnåldersringen 783<br>
-                  13665 Söderby<br>
-                  Sweden</p>
-			</div>
-			<div class="col-md iframe-column">
-				<iframe class="embed-responsive-item"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2043.8705241182986!2d18.163212816150068!3d59.18474282964897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f7c76d85506ab%3A0x64252e6b02e90114!2sJ%C3%A4rn%C3%A5ldersringen%20783%2C%20136%2065%20Haninge!5e0!3m2!1sen!2sse!4v1586803381760!5m2!1sen!2sse"></iframe>
-			</div>
-			<div class="col-md">
-				<p class="left-align margin-top color-white">070-3055561<br>
-                Nicke.jonsson@live.com</p>
-			</div>
-		</div>
-	</section>
 
-	<section class="container-fluid my-font-family">
-		<div class="row">
-			<div class="col">
-				<h3 class="contact-heading text-center">Send me a message!</h3>
-
-				<div class="center-form">
-					<form action="mailto:nicke.jonsson@live.com" method="post" enctype="text/plain">
-						<input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
-						<input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
-						<textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Message" required></textarea>
-						<div class="form-row text-center">
-							<div class="col">
-								<button type="submit" class="btn btn-secondary">Send Message</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="container-fluid contact pt-100 pb-100" id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-12 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     <p>get in touch</p>
+                     <h4>contact me</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row text-center">
+                  <div class="col-md-8">
+                     <form action="#" class="contact-form">
+                        <div class="row">
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="name">
+                           </div>
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="email">
+                           </div>
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="subject">
+                           </div>
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="telephone">
+                           </div>
+                           <div class="col-xl-12">
+                              <textarea placeholder="message" cols="30" rows="10"></textarea>
+                              <input type="submit" value="send message">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="single-contact">
+                        <i class="fa fa-map-marker"></i>
+                        <h5>Address</h5>
+                        <p>Järnåldersringen 783, 13665 Söderby, Sverige</p>
+                     </div>
+                     <div class="single-contact">
+                        <i class="fa fa-phone"></i>
+                        <h5>Phone</h5>
+                        <p>+46 (0)70-305 55 61</p>
+                     </div>
+                     <div class="single-contact">
+                        <i class="fa fa-envelope"></i>
+                        <h5>Email</h5>
+                        <p>Nicke.jonsson@live.com</p>
+                     </div>
+                  </div>
+            </div>
+         </div>
+    </section>
 
 	<footer class="container-fluid my-font-family">
 		<div id="theFooter" class="row">
