@@ -495,3 +495,11 @@ iframe {
         width: 250px;
     }
 }
+
+/* changes the alignment of jumbotron in indexpage on small screens */
+
+@media(max-width: 565px) {
+    .carousel-caption {
+        top: 120px;
+    }
+}
