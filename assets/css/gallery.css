@@ -27,6 +27,11 @@
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.grid [class^="col"] {
+    padding: 0px;
 }
 
 .grid figure figcaption::before,
@@ -75,10 +80,6 @@
 figure.effect-ravi {
     background: #303fa9;
     margin: 0;
-}
-
-.grid [class^="col"] {
-    padding: 2px;
 }
 
 figure.effect-ravi h2 {
