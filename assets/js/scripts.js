@@ -23,5 +23,6 @@ function scrollFunction() {
             document.getElementById("logo-header").style.height = "40px";
             document.getElementById("logo-header").style.marginTop = "-10px";
             document.getElementById("header").style.fontSize = "16px";
+            document.getElementsByClassName("nav-item").style.background = "black";
     }
 }
