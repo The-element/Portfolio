@@ -110,13 +110,6 @@
     text-align: center;
 }
 
-.grey-background-container {
-    background-color: #131111;
-    padding-top: 80px;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
 /* Containers and their styling */
 .my-font-family {
     font-family: "Exo", sans-serif;
@@ -397,6 +390,7 @@ span.progress-type {
 }
 
 .skills-header {
+    text-align: center;
     margin-top: 50px;
 }
 
