@@ -6,6 +6,10 @@
     border: 0;
 }
 
+.navbar-brand{
+    padding: 0!important;
+}
+
 .navbar .navbar-toggler {
     border: 0;
 }
@@ -28,7 +32,7 @@
 
 .logo-header {
     height: 40px;
-    margin-top: -10px;
+    margin-top: -20px;
     animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
     animation-fill-mode: both;
 }
@@ -431,6 +435,12 @@ iframe {
     .navbar {
         background-color: #000000;
     }
+    .nav-item {
+        background-color: black;
+    }
+    .mr-2 {
+    margin-right: -1rem!important;
+}
 }
 
 /* aligns navitems to the left */
