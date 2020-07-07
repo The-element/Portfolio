@@ -235,7 +235,9 @@
 .grid div{
     width: 100%;
 }
-
+.grid{
+    width: 100vw;
+}
 .grid div img {
     position: relative;
     display: block;
