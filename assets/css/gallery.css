@@ -2,7 +2,6 @@
     position: relative;
     float: left;
     overflow: hidden;
-    background: #3085a3;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -79,10 +78,7 @@
     font-size: 68.5%;
 }
 
-
-
 figure.effect-ravi {
-    background: #303fa9;
     margin: 0;
 }
 

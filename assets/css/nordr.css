@@ -1,0 +1,44 @@
+.nordr1{
+    background: url('../images/nordr-front.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.nordr2{
+    background: url('../images/inredning2.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.nordr3{
+    background: url('../images/affischliten.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.nordr4{
+    background: url('../images/utfyllnad.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.effect-ravi{
+    height: 500px;
+}
+
+.lead{
+    color: #fafafa;
+    padding-top: 2rem;
+}

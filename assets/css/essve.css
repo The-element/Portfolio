@@ -1,0 +1,44 @@
+.essve1{
+    background: url('../images/index.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.essve2{
+    background: url('../images/essve1.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.essve3{
+    background: url('../images/essve2.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.essve4{
+    background: url('../images/essve3.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.effect-ravi{
+    height: 500px;
+}
+
+.lead{
+    color: #fafafa;
+    padding-top: 2rem;
+}

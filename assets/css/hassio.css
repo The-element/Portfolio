@@ -1,0 +1,44 @@
+.hassio1{
+    background: url('../images/hass.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.hassio2{
+    background: url('../images/hass.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.hassio3{
+    background: url('../images/hass.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.hassio4{
+    background: url('../images/hass.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;    
+}
+
+.effect-ravi{
+    height: 500px;
+}
+
+.lead{
+    color: #fafafa;
+    padding-top: 2rem;
+}
