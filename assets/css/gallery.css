@@ -1,3 +1,4 @@
+/* Another adjustment of the placing of the search-icon*/
 .grid figure {
     position: relative;
     float: left;
@@ -6,11 +7,7 @@
     cursor: pointer;
     width: 100%;
 }
-
-.grid [class^="col"] {
-    padding: 0.5px;
-}
-
+/* The size of each photo*/
 .grid figure img {
     position: relative;
     display: block;
@@ -19,29 +16,15 @@
     opacity: 0.8;
     margin: 0;
 }
-
-.grid figure figcaption {
-    padding: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
+/* The overlay-color*/
 .grid figure figcaption:hover{
     background-color: rgba(0,0,0,0.5);
 }
-
+/* The border*/
 .grid [class^="col"] {
     padding: 0px;
 }
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-    pointer-events: none;
-}
-
+/* Placement of rectangle and Icon, and the overlay*/
 .grid figure figcaption,
 .grid figure figcaption>a {
     position: absolute;
@@ -50,42 +33,11 @@
     width: 100%;
     height: 100%;
 }
-
-.grid figure figcaption>a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-}
-
-.grid figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 300;
-}
-
-.grid figure h2 span {
-    font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-    margin: 0;
-}
-
-.grid figure p {
-    letter-spacing: 1px;
-    font-size: 68.5%;
-}
-
+/* Margin between photos in mobile-view */
 figure.effect-ravi {
     margin: 0;
 }
-
-figure.effect-ravi h2 {
-    font-size: 158.75%;
-}
-
+/* The starting point for the search-icon fadein*/
 figure.effect-ravi h2,
 figure.effect-ravi p {
     position: absolute;
@@ -98,7 +50,7 @@ figure.effect-ravi p {
     -webkit-transform-origin: 50%;
     transform-origin: 50%;
 }
-
+/* The rectangle fadeIn animation-effect*/
 figure.effect-ravi figcaption::before {
     position: absolute;
     top: 50%;
@@ -115,61 +67,30 @@ figure.effect-ravi figcaption::before {
     -webkit-transform-origin: 50%;
     transform-origin: 50%;
 }
-
+/* Size of search-icon */
 figure.effect-ravi p {
     width: 100px;
     text-transform: none;
     font-size: 121%;
     line-height: 2;
 }
-
+/*The color for the search-icon*/
 figure.effect-ravi p a {
     color: #fff;
 }
-
-figure.effect-ravi p a:hover,
-figure.effect-ravi p a:focus {
-    opacity: 0.6;
-}
-
+/* Hides the starting point for the search-icon fadein animation */
 figure.effect-ravi p a i {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
 }
-
-figure.effect-ravi p a:first-child i {
-    -webkit-transform: translate3d(-60px, -60px, 0);
-    transform: translate3d(-60px, -60px, 0);
-}
-
-figure.effect-ravi p a:nth-child(2) i {
-    -webkit-transform: translate3d(60px, -60px, 0);
-    transform: translate3d(60px, -60px, 0);
-}
-
-figure.effect-ravi p a:nth-child(3) i {
-    -webkit-transform: translate3d(-60px, 60px, 0);
-    transform: translate3d(-60px, 60px, 0);
-}
-
-figure.effect-ravi p a:nth-child(4) i {
-    -webkit-transform: translate3d(60px, 60px, 0);
-    transform: translate3d(60px, 60px, 0);
-}
-
+/* The rectangle */
 figure.effect-ravi:hover figcaption::before {
     opacity: 1;
     -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
     transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
 }
-
-figure.effect-ravi:hover h2 {
-    opacity: 0;
-    -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
-    transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
-}
-
+/* The search-icon */
 figure.effect-ravi:hover p i:empty {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
