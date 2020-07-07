@@ -6,6 +6,10 @@
     border: 0;
 }
 
+.navbar-nav li.project-dropdown{
+    flex-direction: row;
+}
+
 .project-dropdown{
     width: 60px;
 }
