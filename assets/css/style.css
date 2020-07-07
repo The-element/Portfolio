@@ -15,7 +15,14 @@
     color: #fafafa;
 }
 
-.dropdown-item:hover{
+.navbar .navbar-nav a.dropdown-item{
+    color: rgba(255,255,255,.5);
+    margin-right: 80px!important;
+    font-size: 13px;
+}
+
+.navbar .navbar-nav a.dropdown-item:hover{
+    color: rgb(189, 189, 189);
     background-color: transparent;
 }
 
