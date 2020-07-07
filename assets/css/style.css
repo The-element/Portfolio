@@ -232,6 +232,10 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+.grid div{
+    width: 100%;
+}
+
 .grid div img {
     position: relative;
     display: block;
