@@ -7,8 +7,6 @@
 }
 
 .project-dropdown{
-    margin-left: -40px;
-    bottom: -1px;
     width: 60px;
 }
 
@@ -91,14 +89,18 @@
 }
 
 .navbar-nav li:nth-child(3) {
-    animation-delay: .9s;
+    animation-delay: .6s;
 }
 
 .navbar-nav li:nth-child(4) {
-    animation-delay: 1.2s;
+    animation-delay: .9s;
 }
 
 .navbar-nav li:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.navbar-nav li:nth-child(6) {
     animation-delay: 1.5s;
 }
 
@@ -477,6 +479,9 @@ iframe {
     .mr-auto{
         margin-left: -18px;
     }
+    .project-dropdown{    
+        padding-right: 100%;
+    }
 }
 
 /* aligns navitems to the left */
@@ -486,6 +491,10 @@ iframe {
     }
     .mr-auto, .mx-auto {
         margin-right: 10px!important;
+    }
+    .project-dropdown{
+        margin-left: -40px;
+        bottom: -1px;
     }
 }
 
