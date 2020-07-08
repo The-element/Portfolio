@@ -26,3 +26,18 @@ function scrollFunction() {
             document.getElementsByClassName("nav-item").style.background = "black";
     }
 }
+
+// currentCount is a growing number;
+// progress is the final number;
+// You can change the number 300;
+
+var currentCount = 150;
+var progress = (currentCount / 300) * 100;
+console.log(progress);
+$(".progress-bar").width(progress + '%');
+if (progress % 1 !== 0) {
+  $(".progress-bar").text(progress.toFixed(1) + '%');
+} else {
+  $(".progress-bar").text(progress + '%');
+}
+
