@@ -27,17 +27,22 @@ function scrollFunction() {
     }
 }
 
-// currentCount is a growing number;
-// progress is the final number;
-// You can change the number 300;
 
-var currentCount = 150;
-var progress = (currentCount / 300) * 100;
-console.log(progress);
-$(".progress-bar").width(progress + '%');
-if (progress % 1 !== 0) {
-  $(".progress-bar").text(progress.toFixed(1) + '%');
-} else {
-  $(".progress-bar").text(progress + '%');
+
+var myVar=setInterval(function(){myTimer()},1);
+var count = 0;
+function myTimer() {
+if(count < 10){
+  $('.progress').css('width', count + "%");
+  count += 0.05;
+   document.getElementById("demo").innerHTML = Math.round(count) +"%";
+   // code to do when loading
+  }
+  
+  else if(count > 99){  
+      // code to do after loading
+  $('.progress').css('width', count + "%");
+  count = 0;
+  
+  }
 }
-
