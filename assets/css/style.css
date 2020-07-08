@@ -6,6 +6,12 @@
     border: 0;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff!important;
+    text-decoration: none;
+    background-color: #000000;
+}
+
 .navbar-nav li.project-dropdown{
     flex-direction: row;
 }
