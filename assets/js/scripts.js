@@ -1,21 +1,17 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 var screenSize = parseInt(window.screen.width);
 var count = 30;
-var progressCount = [1,2,3,4,5,6,7];
-var className = [];
+var progressCount = [80,60,75,90,50,60,70];
+var className = ["progress1", "progress2", "progress3", "progress4", "progress5", "progress6", "progress7"];
 
-for(i=0; i < progressCount.length; i++){
-    className = ".progress" + toString(progressCount[i+1]);
-}
-
-$(window).scroll(function(className) {
+$(window).scroll(function() {
     scrollFunction();
     var hT = $(".progress").offset().top,
         hH = $(".progress").outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT+hH-wH)){
-        setInterval(function(className){myTimer(className)},10);
+        setInterval(function(className, progressCount){myTimer(className, progressCount)},10);
     }
 });
 
@@ -44,15 +40,17 @@ function scrollFunction() {
     }
 }
 
-function myTimer(className) {
-    for(i=0; i < className.length; i++){
-        if(count < 50){
-            document.getElementsByClassName(className[i]).style.width = count + "%";
-            count += 0.5;
-            document.getElementById("demo").innerHTML = Math.round(count) +"%";
-        }else if (count > 99){
-            $('.progress').css('width', count + "%");
-            count = 0;
+function myTimer(className, progressCount) {
+    for(i=0; i<className.length; i++){
+        for(i=0; i<progressCount.length; i++){
+            if(count < progressCount[i]){
+                document.getElementsByClassName(className[i]).style.width = count + "%";
+                count += 0.5;
+                document.getElementById("demo").innerHTML = Math.round(count) +"%";
+            }else if (count > 99){
+                $('.progress').css('width', count + "%");
+                count = 0;
+            }
         }
     }
-}
+};
