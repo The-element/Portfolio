@@ -1,7 +1,6 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 var screenSize = parseInt(window.screen.width);
 
-var myVar=setInterval(function(){myTimer()},1);
 var count = 30;
 
 $(window).scroll(function() {
@@ -11,7 +10,7 @@ $(window).scroll(function() {
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
-        myTimer();
+        setInterval(function(){myTimer()},1);
     }
 });
 
@@ -39,17 +38,6 @@ function scrollFunction() {
             document.getElementsByClassName("nav-item").style.background = "black";
     }
 }
-/*
-window.scroll(function(){
-    var hT = $(".skills-header").offset().top,
-        hH = $(".skills-header").outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if(wS > (hT+hH-wH)){
-        myTimer();
-    }
-})
-*/
 
 function myTimer() {
     if(count < 50){
