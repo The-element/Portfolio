@@ -1,15 +1,21 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 var screenSize = parseInt(window.screen.width);
 var count = 30;
+var progressCount = [1,2,3,4,5,6,7];
+var className = [];
 
-$(window).scroll(function() {
+for(i=0; i < progressCount.length; i++){
+    className = ".progress" + toString(progressCount[i+1]);
+}
+
+$(window).scroll(function(className) {
     scrollFunction();
     var hT = $(".progress").offset().top,
         hH = $(".progress").outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT+hH-wH)){
-        setInterval(function(){myTimer()},10);
+        setInterval(function(className){myTimer(className)},10);
     }
 });
 
@@ -38,13 +44,15 @@ function scrollFunction() {
     }
 }
 
-function myTimer() {
-    if(count < 50){
-        $('.progress1').css('width', count + "%");
-        count += 0.5;
-        document.getElementById("demo").innerHTML = Math.round(count) +"%";
-    }else if (count > 99){
-        $('.progress').css('width', count + "%");
-        count = 0;
+function myTimer(className) {
+    for(i=0; i < className.length; i++){
+        if(count < 50){
+            document.getElementsByClassName(className[i]).style.width = count + "%";
+            count += 0.5;
+            document.getElementById("demo").innerHTML = Math.round(count) +"%";
+        }else if (count > 99){
+            $('.progress').css('width', count + "%");
+            count = 0;
+        }
     }
 }
