@@ -1,13 +1,16 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 var screenSize = parseInt(window.screen.width);
 
+var myVar=setInterval(function(){myTimer()},1);
+var count = 30;
+
 $(window).scroll(function() {
     scrollFunction();
-    var hT = $(".skills-header").offset().top,
-        hH = $(".skills-header").outerHeight(),
+    var hT = $(".progress2").offset().top,
+        hH = $(".progress2").outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
-    if(wS > (hT+hH-wH)){
+    if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
         myTimer();
     }
 });
@@ -36,7 +39,7 @@ function scrollFunction() {
             document.getElementsByClassName("nav-item").style.background = "black";
     }
 }
-
+/*
 window.scroll(function(){
     var hT = $(".skills-header").offset().top,
         hH = $(".skills-header").outerHeight(),
@@ -46,20 +49,15 @@ window.scroll(function(){
         myTimer();
     }
 })
+*/
 
-
-var myVar=setInterval(function(){myTimer()},1);
-var count = 30;
-
-function myTimer(bars, listOfPer) {
+function myTimer() {
     if(count < 50){
         $('.progress1').css('width', count + "%");
         count += 0.5;
         document.getElementById("demo").innerHTML = Math.round(count) +"%";
-    }
-    if(count > 99){
-        $('.progress2').css('width', count + "%");
-        count += 0.5;
-        document.getElementById("demo2").innerHTML = Math.round(count) +"%";
+    }else if (count > 99){
+        $('.progress').css('width', count + "%");
+        count = 0;
     }
 }
