@@ -32,7 +32,7 @@ function scrollFunction() {
 var myVar=setInterval(function(){myTimer()},1);
 var count = 0;
 function myTimer() {
-if(count < 10){
+if(count < 50){
   $('.progress').css('width', count + "%");
   count += 0.05;
    document.getElementById("demo").innerHTML = Math.round(count) +"%";

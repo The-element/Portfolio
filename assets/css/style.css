@@ -455,6 +455,11 @@
     position: relative;
     height: 25px;
     margin-bottom: 4px;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.progress-back{
+    background-color: #e9ecef;
 }
 
 span.progress-type {
