@@ -39,7 +39,7 @@ function scrollFunction() {
             document.getElementsByClassName("nav-item").style.background = "black";
     }
 }
-
+/*
 function myTimer(className, progressCount) {
     for(i=0; i<className.length; i++){
         for(i=0; i<progressCount.length; i++){
