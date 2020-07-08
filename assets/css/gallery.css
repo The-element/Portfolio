@@ -71,7 +71,7 @@ figure.effect-ravi figcaption::before {
 figure.effect-ravi p {
     width: 100px;
     text-transform: none;
-    font-size: 121%;
+    font-size: 25px;
     line-height: 2;
 }
 /*The color for the search-icon*/
