@@ -1,8 +1,5 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 var screenSize = parseInt(window.screen.width);
-var count = 30;
-var progressCount = [80,60,75,90,50,60,70];
-var className = ["progress1", "progress2", "progress3", "progress4", "progress5", "progress6", "progress7"];
 
 $(window).scroll(function() {
     scrollFunction();
@@ -11,7 +8,7 @@ $(window).scroll(function() {
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT+hH-wH)){
-        setInterval(function(className, progressCount){myTimer(className, progressCount)},10);
+        myTimer();
     }
 });
 
@@ -39,18 +36,28 @@ function scrollFunction() {
             document.getElementsByClassName("nav-item").style.background = "black";
     }
 }
-/*
-function myTimer(className, progressCount) {
-    for(i=0; i<className.length; i++){
-        for(i=0; i<progressCount.length; i++){
-            if(count < progressCount[i]){
-                document.getElementsByClassName(className[i]).style.width = count + "%";
+
+function myTimer() {
+    var progressCount = [80,60,75,90,50,60,70];
+    var className = ["progress0", "progress1", "progress2", "progress3", "progress4", "progress5", "progress6"];
+    var demoName = ["demo0", "demo1", "demo2", "demo3", "demo4", "demo5", "demo6"];
+    var count = 25;
+
+    setInterval(function(){
+        for(i=0; i<className.length; i++){
+            var cssClass = className[i];
+            var demoId = demoName[i];
+            var progressNr = progressCount[i];
+
+            if(count < progressNr){
+                $(cssClass).css('width', count + "%");
                 count += 0.5;
-                document.getElementById("demo").innerHTML = Math.round(count) +"%";
+                document.getElementById(demoId).innerHTML = Math.round(count) +"%";
             }else if (count > 99){
-                $('.progress').css('width', count + "%");
+                //document.getElementsByClassName(cssClass).style.width = count + "%";
+                $(cssClass).css('width', count + "%");
                 count = 0;
             }
         }
-    }
+    },10);
 };
