@@ -41,7 +41,7 @@ function myTimer() {
     var progressCount = [80,60,75,90,50,60,70];
     var className = ["progress0", "progress1", "progress2", "progress3", "progress4", "progress5", "progress6"];
     var demoName = ["demo0", "demo1", "demo2", "demo3", "demo4", "demo5", "demo6"];
-    var count = 25;
+    var count = 30;
 
     setInterval(function(){
         for(i=0; i<className.length; i++){
@@ -50,13 +50,14 @@ function myTimer() {
             var progressNr = progressCount[i];
 
             if(count < progressNr){
-                $(cssClass).css('width', count + "%");
-                count += 0.5;
+                document.getElementById(cssClass).style.width = count + "%";
+                //$(cssClass).css('width', count + "%");
+                count += 1;
                 document.getElementById(demoId).innerHTML = Math.round(count) +"%";
             }else if (count > 99){
                 //document.getElementsByClassName(cssClass).style.width = count + "%";
                 $(cssClass).css('width', count + "%");
-                count = 0;
+                count = 30;
             }
         }
     },10);
