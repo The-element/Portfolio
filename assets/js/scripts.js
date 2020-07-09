@@ -1,5 +1,6 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 var screenSize = parseInt(window.screen.width);
+var show = 0;
 
 $(window).scroll(function() {
     scrollFunction();
@@ -7,8 +8,9 @@ $(window).scroll(function() {
         hH = $(".progress").outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
-    if (wS > (hT+hH-wH)){
+    if (show < 1 && wS > (hT+hH-wH)){
         myTimer();
+        show++;
     }
 });
 
