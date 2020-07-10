@@ -1,15 +1,17 @@
 .progress-cont{
     min-height: 250px;
-    background: url(../images/forest.jpg) fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 50px;
+    padding-bottom: 50px;
     font-weight: bold;
 }
 
+.border{
+    border-top: 2px solid black;
+    margin-bottom: 50px;
+}
+
 .progress-round{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     line-height: 150px;
     background: none;
     margin: 0 auto;
@@ -73,7 +75,7 @@
     background: #44484b;
     font-size: 24px;
     color: #fff;
-    line-height: 135px;
+    line-height: 95px;
     text-align: center;
     position: absolute;
     top: 5%;
@@ -203,4 +205,10 @@
 	bottom: 0;
 	left: 50%;
 	margin-left: -25px;
+}
+
+@media (min-width: 768px){
+    .col-md-3 {
+        max-width: 20%;
+    }
 }

@@ -40,9 +40,9 @@ function scrollFunction() {
 }
 
 function myTimer() {
-    var progressCount = [80,60,75,90,50,60,70];
-    var className = ["progress0", "progress1", "progress2", "progress3", "progress4", "progress5", "progress6"];
-    var demoName = ["demo0", "demo1", "demo2", "demo3", "demo4", "demo5", "demo6"];
+    var progressCount = [80,60,75,90,50,60,70,50,60,70,75,80,90,65];
+    var className = ["progress0", "progress1", "progress2", "progress3", "progress4", "progress5", "progress6", "progress7", "progress8", "progress9", "progress10", "progress11", "progress12", "progress3"];
+    var demoName = ["demo0", "demo1", "demo2", "demo3", "demo4", "demo5", "demo6", "demo7", "demo8", "demo9", "demo10", "demo11", "demo12", "demo13"];
     var count = 30;
 
     setInterval(function(){
