@@ -64,3 +64,27 @@ function myTimer() {
         }
     },10);
 };
+
+//  The modal in timeline //
+function storeChoice(id){
+    var choice = id;
+    var listOfJobs = ["hemfixare", "essveSverige", "buildFlow", "nordr", "24mx", "zooVillage", "riksbyggen1", "skellMontage", "budOchService", "riksbyggen2", "note", "handelshuset", "xzakt", "specma1", "specma2", "codeInst", "ntiSkolan", "abfStockholm", "euniqem", "AnderstorpsGymn"];
+
+    for(i=0; i<listOfJobs.length; i++){
+        if (choice === listOfJobs[i]){
+            document.getElementById("hemfixModal").innerHTML(`<div class="modal-dialog modal-dialog-centered" role="document">
+			    						<div class="modal-content">
+				    						<div class="modal-header">
+					    						<h5 class="modal-title" id="hemfixModalLabel">Hemfixare</h5>
+						    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+									    	</div>
+										    <div class="modal-body">
+											    <p>Technichan/handyman</p>
+										    </div>
+    									</div>
+	    							</div>`)
+        }
+    }
+}
