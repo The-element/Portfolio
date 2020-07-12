@@ -66,6 +66,7 @@ function myTimer() {
 };
 
 //  The modal in timeline //
+/*
 function storeChoice(id){
     var choice = id;
     var listOfJobs = ["hemfixare", "essveSverige", "buildFlow", "nordr", "24mx", "zooVillage", "riksbyggen1", "skellMontage", "budOchService", "riksbyggen2", "note", "handelshuset", "xzakt", "specma1", "specma2", "codeInst", "ntiSkolan", "abfStockholm", "euniqem", "AnderstorpsGymn"];
@@ -87,4 +88,4 @@ function storeChoice(id){
 	    							</div>`)
         }
     }
-}
+}*/
