@@ -469,6 +469,10 @@ button.close-pic:focus{
     outline: none!important;
 }
 
+.grid div img.modalImg{
+    opacity: 1;
+}
+
 /* the about me page and its styling */
 .aboutme-header {
     color: #000000;
