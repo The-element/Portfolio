@@ -82,3 +82,12 @@
 .fa-fa-code{
     top: 70%;
 }
+
+.row-container{
+    margin-bottom: -7px;
+}
+
+.btn-modal:focus{
+    border: none;
+    outline: none;
+}
