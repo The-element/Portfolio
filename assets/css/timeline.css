@@ -42,3 +42,11 @@
 	left: 50%;
 	margin-left: -25px;
 }
+.timeline-item{
+    text-align: left;
+}
+
+.btn-link{
+    padding:0;
+    border:0;
+}
