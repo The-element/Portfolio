@@ -44,6 +44,7 @@
 }
 .timeline-item{
     text-align: left;
+    min-width: 300px;
 }
 
 .btn-link{
