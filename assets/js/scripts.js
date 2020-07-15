@@ -4,13 +4,17 @@ var show = 0;
 
 $(window).scroll(function() {
     scrollFunction();
-    var hT = $(".progress").offset().top,
-        hH = $(".progress").outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if (show < 1 && wS > (hT+hH-wH)){
+    if (screenSize > 767) {
+        var hT = $(".progress").offset().top,
+            hH = $(".progress").outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (show < 1 && wS > (hT+hH-wH)){
+            myTimer();
+            show++;
+        }
+    } else {
         myTimer();
-        show++;
     }
 });
 
