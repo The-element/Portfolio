@@ -55,10 +55,10 @@ function myTimer() {
                 document.getElementById(cssClass).style.width = count + "%";
                 //$(cssClass).css('width', count + "%");
                 count += 1;
-                document.getElementById(demoId).innerHTML = Math.round(count) +"%";
+                document.getElementById(demoId).innerHTML = count +"%";
             }else if (count > 99){
-                //document.getElementsByClassName(cssClass).style.width = count + "%";
-                $(cssClass).css('width', count + "%");
+                document.getElementsByClassName(cssClass).style.width = count + "%";
+                //$(cssClass).css('width', count + "%");
                 count = 30;
             }
         }
