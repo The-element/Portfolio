@@ -51,16 +51,22 @@ function myTimer() {
             var demoId = demoName[i];
             var progressNr = progressCount[i];
 
+            for(j=0; j<progressNr; j++){
+                document.getElementById(cssClass).style.width = j + 1 + "%";
+                document.getElementById(demoId).innerHTML = j + 1 + "%";
+                //count += 1;
+            }
+            /*
             if(count < progressNr){
                 document.getElementById(cssClass).style.width = count + "%";
                 //$(cssClass).css('width', count + "%");
-                count += 1;
                 document.getElementById(demoId).innerHTML = count +"%";
+                count += 1;
             }else if (count > 99){
                 document.getElementsByClassName(cssClass).style.width = count + "%";
                 //$(cssClass).css('width', count + "%");
                 count = 30;
-            }
+            }*/
         }
     },10);
 };
