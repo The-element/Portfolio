@@ -55,26 +55,14 @@ function myTimer() {
         for(j=0; j<value; j++){
             var countNr = 30;
 
-            //if (countNr < value){
-                for(k=30; k<value; k++){
-                    document.getElementById(cssClass).style.width = countNr +1 + "%";
-                    document.getElementById(demoId).innerHTML = countNr +1 + "%";
-                    countNr++;
-                    sleep(500);
-                }
-            //}
+            do {
+                document.getElementById(cssClass).style.width = countNr +1 + "%";
+                document.getElementById(demoId).innerHTML = countNr +1 + "%";
+                countNr+=1;
+            } while (countNr < value);
         }
     }
 };
-
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-
-    do {
-        currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-}
 
 
 //  The modal in timeline //
