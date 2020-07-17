@@ -55,6 +55,8 @@
     border-left: 0;
     -webkit-transform-origin: center left;
     transform-origin: center left;
+    text-align: left;
+    transition-duration: 3s;
 }
 .progress-round .progress-right{
     right: 0;
