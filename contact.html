@@ -18,6 +18,12 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<script type="text/javascript" src="assets/js/scripts.js"></script>
 	<title>Portfolio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_DSNAdRXmvPEw5099weehu");
+        })();
+    </script>
 </head>
 
 <body>
@@ -67,24 +73,24 @@
             </div>
             <div class="row text-center">
                   <div class="col-md-8">
-                     <form action="#" class="contact-form">
+                     <form id="myform" method="post" class="contact-form">
                         <div class="row">
-                           <div class="col-xl-6">
-                              <input type="text" placeholder="name">
-                           </div>
-                           <div class="col-xl-6">
-                              <input type="text" placeholder="email">
-                           </div>
-                           <div class="col-xl-6">
-                              <input type="text" placeholder="subject">
-                           </div>
-                           <div class="col-xl-6">
-                              <input type="text" placeholder="telephone">
-                           </div>
-                           <div class="col-xl-12">
-                              <textarea placeholder="message" cols="30" rows="10"></textarea>
-                              <input type="submit" value="send message">
-                           </div>
+                            <div class="col-xl-6">
+                                <input type="text" name="from_name" id="fullname" placeholder="Name" required/>
+                            </div>
+                            <div class="col-xl-6">
+                                <input type="text" name="from_email" id="emailaddress" placeholder="Email" required/>
+                            </div>
+                            <div class="col-xl-6">
+                                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-xl-6">
+                                <input type="text" name="phone" id="phone" placeholder="Telephone">
+                            </div>
+                            <div class="col-xl-12">
+                                <textarea placeholder="Message" cols="30" rows="10" name="message" id="message" required></textarea>
+                                <input id="submit" type="submit" value="send message">
+                            </div>
                         </div>
                      </form>
                   </div>
