@@ -212,3 +212,17 @@
         max-width: 20%;
     }
 }
+
+/* Animation of progress-bar*/
+
+.progress-bar{
+	height: 100%;
+    width: 100%;
+	animation:samet 5s linear;
+}
+
+@keyframes samet{
+	0%{
+		width: 0;
+	}
+}
