@@ -125,3 +125,9 @@ textarea {
 .contact-form input:focus, textarea:focus {
 	border-color: #CC5B00
 }
+
+@media (max-width: 768px){
+    .padding-top{
+        padding-top: 60px;
+    }
+}
