@@ -1,37 +1,73 @@
-.essve1{
-    background: url('../images/index.jpg') no-repeat center center;
+.portpic{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: relative;    
+    position: relative;   
+}
+
+.essve1{
+    background: url('../images/index.jpg') no-repeat center center;
 }
 
 .essve2{
     background: url('../images/essve2.png') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;    
 }
 
 .essve3{
     background: url('../images/essve3.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
 }
 
 .essve4{
     background: url('../images/essve1.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;    
+}
+
+.hassio1{
+    background: url('../images/hass.jpg') no-repeat center center;
+}
+
+.hassio2{
+    background: url('../images/hassio2.jpg') no-repeat center center;
+}
+
+.hassio3{
+    background: url('../images/hassio11.jpg') no-repeat center center;
+}
+
+.hassio4{
+    background: url('../images/hassio3.jpg') no-repeat center center;
+}
+
+.nordr1{
+    background: url('../images/nordr-front.jpg') no-repeat center center;
+}
+
+.nordr2{
+    background: url('../images/inredning2.jpg') no-repeat center center;
+}
+
+.nordr3{
+    background: url('../images/affischliten.jpg') no-repeat center center;
+}
+
+.nordr4{
+    background: url('../images/utfyllnad.jpg') no-repeat center center;
+}
+
+.portfolio1{
+    background: url('../../readme-images/indexcut.jpg') no-repeat center center;
+}
+
+.portfolio2{
+    background: url('../images/portfolio2.jpg') no-repeat center center;
+}
+
+.portfolio3{
+    background: url('../images/portfolio3.jpg') no-repeat center center;
+}
+
+.portfolio4{
+    background: url('../images/portfolio4.jpg') no-repeat center center;
 }
 
 .effect-ravi{
