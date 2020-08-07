@@ -23,6 +23,9 @@
         (function(){
             emailjs.init("user_DSNAdRXmvPEw5099weehu");
         })();
+	</script>
+    <script type="text/javascript">
+        window.onload = sendFunction;
     </script>
 </head>
 
@@ -75,6 +78,7 @@
                   <div class="col-md-8">
                      <form id="myform" method="post" class="contact-form">
                         <div class="row">
+							<input type="hidden" name="contact_number">
                             <div class="col-xl-6">
                                 <input type="text" name="from_name" id="fullname" placeholder="Name" required/>
                             </div>
@@ -89,7 +93,7 @@
                             </div>
                             <div class="col-xl-12">
                                 <textarea placeholder="Message" cols="30" rows="10" name="message" id="message" required></textarea>
-                                <input id="submit" type="submit" value="send message">
+                                <input id="submit" type="submit" value="send">
                             </div>
                         </div>
                      </form>
